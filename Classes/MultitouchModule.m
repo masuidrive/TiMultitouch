@@ -54,7 +54,6 @@
 // hacks to get around it.
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event 
 {
-	NSLog(@"touchesBegan:%d",[touches count]);
 	UITouch *touch = [touches anyObject];
 	
 	if (handlesSwipes)
@@ -117,7 +116,6 @@
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event 
 {
-	NSLog(@"touchesMoved:%d",[touches count]);
 	UITouch *touch = [touches anyObject];
 	if (handlesTouches)
 	{
