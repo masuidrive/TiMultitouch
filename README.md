@@ -15,7 +15,7 @@ INSTALL
 HOW TO USE IT
 --------------
 
-Please check <app.js>
+Please check [app.js](app.js)
 
 
 LICENSE
