@@ -1,0 +1,13 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+name: MultiTouch
+moduleid: jp.masuidrive.ti.multitouch
+version: 0.1
+description: Support multitouch
+author: masuidrive
+license: MIT
+copyright: Copyright (c) 2010 by masuidrive
+platform: iphone
+minsdk: 1.4.0
