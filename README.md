@@ -15,7 +15,7 @@ INSTALL
 HOW TO USE IT
 --------------
 
-Please check [[app.js]]
+Please check <app.js>
 
 
 LICENSE
@@ -26,5 +26,3 @@ MIT License
 COPYRIGHT
 --------------
 2010 Yuchiro MASUI (masuidrive) <masui@masuidrive.jp>
-
-
