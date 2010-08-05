@@ -50,8 +50,12 @@ window.addEventListener('touchmove', function(ev) {
 
 window.addEventListener('touchend', function(ev) {
     Ti.API.info(ev);
-    // can't handle multi touch in 'touchend' and 'touchcancel' event.
 });
+
+window.addEventListener('touchcancel', function(ev) {
+    Ti.API.info(ev);
+});
+
 
 window.addEventListener('singletap', function(ev) {
     // DON'T REMOVE THIS LISTENER!!
