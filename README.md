@@ -1,7 +1,7 @@
 Multi touch module Appcelerator Titanium iPhone 1.4.0
 ===========================================
 
-Hanlle multi touch event on your iPhone.
+Handle multi touch event on your iPhone.
 
 This module for Titanium Mobile 1.4.0 only. 
 
