@@ -17,7 +17,7 @@ var imageView = Ti.UI.createImageView({
     image: "sample.jpg",
     transform: Ti.UI.create2DMatrix().scale(scale)
 });
-
+window.add(imageView);
 var start_scale = scale;
 var distance = 0.0;
 var touchstart_point = {x:0, y:0};

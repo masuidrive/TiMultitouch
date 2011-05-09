@@ -8,6 +8,6 @@ version: 0.1
 description: Support multitouch
 author: masuidrive
 license: MIT
-copyright: Copyright (c) 2010 by masuidrive
+copyright: Copyright (c) 2010 by masuidrive 
 platform: iphone
-minsdk: 1.4.0
+minsdk: 1.6.2
