@@ -3,7 +3,7 @@
 # during compilation, packaging, distribution, etc.
 #
 name: MultiTouch
-moduleid: jp.masuidrive.ti.multitouch
+moduleid: multitouch
 version: 0.1
 description: Support multitouch
 author: masuidrive
