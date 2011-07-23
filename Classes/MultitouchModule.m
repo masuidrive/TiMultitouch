@@ -122,12 +122,10 @@
 		NSMutableDictionary *evt = [NSMutableDictionary dictionaryWithDictionary:[TiUtils pointToDictionary:[touch locationInView:self]]];
 		[evt setValue:[TiUtils pointToDictionary:[touch locationInView:nil]] forKey:@"globalPoint"];
 		NSMutableDictionary *ts = [NSMutableDictionary dictionary];
-        int i = 0;
         NSSet *allTouches = [event allTouches];
 
 		for (UITouch* t in allTouches) {
-			[ts setObject:[TiUtils pointToDictionary:[t locationInView:nil]] forKey:[NSString stringWithFormat:@"%d",i]];
-            i += 1;
+			[ts setObject:[TiUtils pointToDictionary:[t locationInView:nil]] forKey:[NSString stringWithFormat:@"%p",t]];
 		}
 		[evt setValue:ts forKey:@"points"];
 		if ([proxy _hasListeners:@"touchmove"])
