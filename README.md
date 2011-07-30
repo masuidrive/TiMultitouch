@@ -15,7 +15,7 @@ If you have another Titanium Mobile SDK version, please change the value of the 
 
 HOW TO USE IT
 -------------
-1. Add the multitouch module to your tiapp.xml: inside the `modules` tag add the following line:
+1. Add the multitouch module to your tiapp.xml: inside the `<modules>` tag add the following line:
 	`<module version="1.0">multitouch</module>`
 2. Add the following code in the beginning of your app.js:
 	`require("multitouch");`
@@ -51,7 +51,7 @@ CODE EXAMPLE
 		Ti.API.info("Touches canceled, points: " + event.points);
 	});
 
-For more info, Please check [app.js](examples/app.js)
+For more info, Please check [app.js](https://github.com/urish/TiMultitouch/blob/master/example/app.js)
 
 
 LICENSE
