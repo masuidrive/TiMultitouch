@@ -4,10 +4,10 @@
 #
 name: MultiTouch
 moduleid: multitouch
-version: 0.1
-description: Support multitouch
-author: masuidrive
+version: 1.0
+description: Adds multitouch to titanium mobile
+author: Uri Shaked
 license: MIT
-copyright: Copyright (c) 2010 by masuidrive 
+copyright: Copyright (c) 2011, Uri Shaked 
 platform: iphone
 minsdk: 1.6.2

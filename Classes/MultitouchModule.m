@@ -47,7 +47,11 @@
 
 @implementation TiUIView (multitouch)
 
-
+- (NSDictionary*)touchToDictionary: (UITouch*) touch {
+    NSMutableDictionary *result = [NSMutableDictionary dictionaryWithDictionary:[TiUtils pointToDictionary:[touch locationInView:self]]];
+    [result setValue:[TiUtils pointToDictionary:[touch locationInView:nil]] forKey:@"globalPoint"];
+    return result;
+}
 
 // TODO: Take a very close look at event handling.  Make sure that parent controls get the right messages.
 // It's kind of broken for tables right now, but there are a couple
@@ -85,7 +89,7 @@
 		[evt setValue:[TiUtils pointToDictionary:[touch locationInView:nil]] forKey:@"globalPoint"];
 		NSMutableDictionary *ts = [NSMutableDictionary dictionary];
 		for (UITouch* t in touches) {
-			[ts setObject:[TiUtils pointToDictionary:[t locationInView:nil]] forKey:[NSString stringWithFormat:@"%p",t]];
+			[ts setObject:[self touchToDictionary:t] forKey:[NSString stringWithFormat:@"%p",t]];
 		}
 		[evt setValue:ts forKey:@"points"];
 		
@@ -122,12 +126,10 @@
 		NSMutableDictionary *evt = [NSMutableDictionary dictionaryWithDictionary:[TiUtils pointToDictionary:[touch locationInView:self]]];
 		[evt setValue:[TiUtils pointToDictionary:[touch locationInView:nil]] forKey:@"globalPoint"];
 		NSMutableDictionary *ts = [NSMutableDictionary dictionary];
-        int i = 0;
         NSSet *allTouches = [event allTouches];
 
 		for (UITouch* t in allTouches) {
-			[ts setObject:[TiUtils pointToDictionary:[t locationInView:nil]] forKey:[NSString stringWithFormat:@"%d",i]];
-            i += 1;
+			[ts setObject:[self touchToDictionary:t] forKey:[NSString stringWithFormat:@"%p",t]];
 		}
 		[evt setValue:ts forKey:@"points"];
 		if ([proxy _hasListeners:@"touchmove"])
@@ -249,7 +251,7 @@
 		[evt setValue:[TiUtils pointToDictionary:[touch locationInView:nil]] forKey:@"globalPoint"];
 		NSMutableDictionary *ts = [NSMutableDictionary dictionary];
 		for (UITouch* t in touches) {
-			[ts setObject:[TiUtils pointToDictionary:[t locationInView:nil]] forKey:[NSString stringWithFormat:@"%p",t]];
+			[ts setObject:[self touchToDictionary:t] forKey:[NSString stringWithFormat:@"%p",t]];
 		}
 		[evt setValue:ts forKey:@"points"];
 		if ([proxy _hasListeners:@"touchend"])
@@ -283,7 +285,7 @@
         NSMutableDictionary *evt = [NSMutableDictionary dictionaryWithDictionary:[TiUtils pointToDictionary:point]];
 		NSMutableDictionary *ts = [NSMutableDictionary dictionary];
 		for (UITouch* t in touches) {
-			[ts setObject:[TiUtils pointToDictionary:[t locationInView:nil]] forKey:[NSString stringWithFormat:@"%p",t]];
+			[ts setObject:[self touchToDictionary:t] forKey:[NSString stringWithFormat:@"%p",t]];
 		}
 		[evt setValue:ts forKey:@"points"];
 		if ([proxy _hasListeners:@"touchcancel"])
