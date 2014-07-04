@@ -22,9 +22,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		590EE98D120AA8E00066A599 /* MultitouchModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 590EE98B120AA8E00066A599 /* MultitouchModule.h */; };
-		590EE98E120AA8E00066A599 /* MultitouchModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 590EE98C120AA8E00066A599 /* MultitouchModule.m */; };
-		AA747D9F0F9514B9006C5449 /* TiMultitouch_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiMultitouch_Prefix.pch */; };
+		24DD6CF91134B3F500162E58 /* MultitouchModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* MultitouchModule.h */; };
+		24DD6CFA1134B3F500162E58 /* MultitouchModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* MultitouchModule.m */; };
+		24DE9E1111C5FE74003F90F6 /* MultitouchModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* MultitouchModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* MultitouchModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* MultitouchModuleAssets.m */; };
+		AA747D9F0F9514B9006C5449 /* Multitouch_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Multitouch_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,17 +36,19 @@
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = TiMultitouch;
+			remoteInfo = "multitouch_module";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* MultitouchModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MultitouchModule.h"; path = "Classes/MultitouchModule.h"; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* MultitouchModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MultitouchModule.m"; path = "Classes/MultitouchModule.m"; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
-		590EE98B120AA8E00066A599 /* MultitouchModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultitouchModule.h; path = Classes/MultitouchModule.h; sourceTree = "<group>"; };
-		590EE98C120AA8E00066A599 /* MultitouchModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultitouchModule.m; path = Classes/MultitouchModule.m; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* TiMultitouch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiMultitouch_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		24DE9E0F11C5FE74003F90F6 /* MultitouchModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MultitouchModuleAssets.h"; path = "Classes/MultitouchModuleAssets.h"; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* MultitouchModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MultitouchModuleAssets.m"; path = "Classes/MultitouchModuleAssets.m"; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* Multitouch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Multitouch_Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* libTiMultitouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiMultitouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AAC07E0554694100DB518D /* libMultitouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libMultitouch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +66,12 @@
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2AAC07E0554694100DB518D /* libTiMultitouch.a */,
+				D2AAC07E0554694100DB518D /* libMultitouch.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0867D691FE84028FC02AAC07 /* TiMultitouch */ = {
+		0867D691FE84028FC02AAC07 /* multitouch_module */ = {
 			isa = PBXGroup;
 			children = (
 				08FB77AEFE84172EC02AAC07 /* Classes */,
@@ -75,7 +79,7 @@
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
-			name = TiMultitouch;
+			name = "multitouch_module";
 			sourceTree = "<group>";
 		};
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
@@ -89,8 +93,10 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				590EE98B120AA8E00066A599 /* MultitouchModule.h */,
-				590EE98C120AA8E00066A599 /* MultitouchModule.m */,
+				24DE9E0F11C5FE74003F90F6 /* MultitouchModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* MultitouchModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* MultitouchModule.h */,
+				24DD6CF81134B3F500162E58 /* MultitouchModule.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -98,7 +104,7 @@
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				AA747D9E0F9514B9006C5449 /* TiMultitouch_Prefix.pch */,
+				AA747D9E0F9514B9006C5449 /* Multitouch_Prefix.pch */,
 				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
 			);
 			name = "Other Sources";
@@ -111,17 +117,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA747D9F0F9514B9006C5449 /* TiMultitouch_Prefix.pch in Headers */,
-				590EE98D120AA8E00066A599 /* MultitouchModule.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* Multitouch_Prefix.pch in Headers */,
+				24DD6CF91134B3F500162E58 /* MultitouchModule.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* MultitouchModuleAssets.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D2AAC07D0554694100DB518D /* TiMultitouch */ = {
+		D2AAC07D0554694100DB518D /* multitouch_module */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "TiMultitouch" */;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "multitouch_module" */;
 			buildPhases = (
 				D2AAC07A0554694100DB518D /* Headers */,
 				D2AAC07B0554694100DB518D /* Sources */,
@@ -131,9 +138,9 @@
 			);
 			dependencies = (
 			);
-			name = TiMultitouch;
-			productName = TiMultitouch;
-			productReference = D2AAC07E0554694100DB518D /* libTiMultitouch.a */;
+			name = "multitouch_module";
+			productName = "multitouch_module";
+			productReference = D2AAC07E0554694100DB518D /* libMultitouch.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -141,15 +148,22 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "TiMultitouch" */;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "multitouch_module" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
-			mainGroup = 0867D691FE84028FC02AAC07 /* TiMultitouch */;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* multitouch_module */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2AAC07D0554694100DB518D /* TiMultitouch */,
+				D2AAC07D0554694100DB518D /* multitouch_module */,
 				24416B8111C4CA220047AFDD /* Build & Test */,
 			);
 		};
@@ -176,7 +190,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				590EE98E120AA8E00066A599 /* MultitouchModule.m in Sources */,
+				24DD6CFA1134B3F500162E58 /* MultitouchModule.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* MultitouchModuleAssets.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +200,7 @@
 /* Begin PBXTargetDependency section */
 		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D2AAC07D0554694100DB518D /* TiMultitouch */;
+			target = D2AAC07D0554694100DB518D /* multitouch_module */;
 			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -198,16 +213,15 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/TiMultitouch.dst;
+				DSTROOT = "/tmp/Multitouch.dst";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = TiMultitouch_Prefix.pch;
+				GCC_PREFIX_HEADER = "Multitouch_Prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = TiMultitouch;
-				TITANIUM_SDK_VERSION = 1.4.0;
+				PRODUCT_NAME = "Multitouch";
 			};
 			name = Debug;
 		};
@@ -217,13 +231,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				DSTROOT = /tmp/TiMultitouch.dst;
+				DSTROOT = "/tmp/Multitouch.dst";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = TiMultitouch_Prefix.pch;
+				GCC_PREFIX_HEADER = "Multitouch_Prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = TiMultitouch;
-				TITANIUM_SDK_VERSION = 1.4.0;
+				PRODUCT_NAME = "Multitouch";
 			};
 			name = Release;
 		};
@@ -282,7 +295,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "TiMultitouch" */ = {
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "multitouch_module" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB921F08733DC00010E9CD /* Debug */,
@@ -291,7 +304,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "TiMultitouch" */ = {
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "multitouch_module" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
